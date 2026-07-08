@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LearnMate-AI</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="header-content">
+
+            <div>
+                <h1>LearnMate-AI</h1>
+                <p>Your AI-Powered Study Companion</p>
+            </div>
+
+            <button
+                id="theme-toggle"
+                type="button"
+                aria-label="Toggle theme">
+                🌙
+            </button>
+
+        </div>
+    </header>
+
+    <main>
+
+        <section id="study-form">
+
+            <h2>Generate Study Notes</h2>
+
+            <form>
+
+                <label for="topic">Study Topic</label>
+
+                <input
+                    type="text"
+                    id="topic"
+                    placeholder="Example: Binary Trees">
+
+                <label for="difficulty">Difficulty</label>
+
+                <select id="difficulty">
+                    <option>Beginner</option>
+                    <option>Intermediate</option>
+                    <option>Advanced</option>
+                </select>
+
+                <button type="submit">
+                    Generate Notes
+                </button>
+
+            </form>
+
+        </section>
+
+       <section id="results">
+
+    <h2>Generated Notes</h2>
+
+    <div id="error-message" class="error-message" style="display: none;"></div>
+
+    <article>
+        <h3>Explanation</h3>
+        <div id="explanation-content"><p></p></div>
+    </article>
+
+    <article>
+        <h3>Key Points</h3>
+        <div id="keypoints-content"><ul></ul></div>
+    </article>
+
+    <article>
+        <h3>Summary</h3>
+        <div id="summary-content"><p></p></div>
+    </article>
+
+    <article>
+        <h3>Quiz</h3>
+        <div id="quiz-content"></div>
+    </article>
+
+    <article>
+        <h3>Answers</h3>
+        <div id="answers-content"></div>
+    </article>
+
+</section>
+
+    </main>
+    <script src="config.js"></script>
+    <script src="script.js"></script>
+
+</body>
+</html>
